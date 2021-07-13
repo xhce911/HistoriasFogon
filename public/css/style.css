@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.container
+{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    display: flex;
+}
+
+.container section
+{
+    min-width: 101%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.portadilla{
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    height: 80px;
+    width: 100%;
+    background-color: #E8D42A;
+}
+
+.portada {
+    width: 30%;
+    height: auto;
+}
+
+.presentacion{
+    width: 1080px;
+
+}
