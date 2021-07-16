@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Historias del Fogón</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdn.rawgit.com/Chalarangelo/mini.css/v3.0.1/dist/mini-default.min.css">
 
@@ -85,9 +85,9 @@
     <div class="footer">
         <div>
             
-            <button id="prev" ><i class="fas fa-arrow-left"></i></button>
-            <button id="next"><i class="fas fa-arrow-right"></i></button>
-            <button id="prev"><i class="fas fa-volume-on"></i></button>
+            <button id="prev" class="controls"><i class="fas fa-arrow-left"></i></button>
+            <button id="next" class="controls"><i class="fas fa-arrow-right"></i></button>
+            <button id="volum" class="controls"><i class="fas fa-volume-up"></i></button>
 
 
         </div>
@@ -98,11 +98,30 @@
     
     var prevBtn = document.getElementById("prev");
     var s = skrollr.init();
+    var nextBtn = document.getElementById("next");
+    var volumeBtn = document.getElementById("volum").childNodes[0];
+    var sound = true;
 
+    volumeBtn.onclick = function(){
+        sound =!sound;
+        if(sound == false){
+            volumeBtn.classList.remove('fas', 'fa-volume-up');
+            volumeBtn.classList.add('fas', 'fa-volume-off');
+        }else{
+            volumeBtn.classList.remove('fas', 'fa-volume-off');
+            volumeBtn.classList.add('fas', 'fa-volume-up');
+        }
+    }
+
+    nextBtn.onclick = function(){
+    
+    }
     prevBtn.onclick = function(){
         s.animateTo(1800);
         console.log(scroln, limit), nlimit
     }
+
+
     
 </script>
 <script src="https://kit.fontawesome.com/1e1a8bc4b5.js" crossorigin="anonymous"></script>
@@ -110,10 +129,6 @@
 <script type="text/javascript">
     scroln = 0 ;
     var elements = document.getElementById("container").childElementCount;
-    var nextBtn = document.getElementById("next");
-
-    nextBtn.onclick = function(){
-     
-    }
+    
 </script>
 </html>
