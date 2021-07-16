@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const port = 5001 || process.env.PORT;
+const port = 5001;
 
 
 app.use(express.static("public"));
@@ -16,5 +16,6 @@ app.get("/", (req, res) =>{
 });
 
 
-app.listen(port, () => console.info(`Listening on port ${port}`));
+app.listen(process.env.PORT || port,
+    () => console.info(`Listening on port ${port}`));
 
