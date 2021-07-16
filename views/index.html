@@ -7,9 +7,10 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdn.rawgit.com/Chalarangelo/mini.css/v3.0.1/dist/mini-default.min.css">
 
+
 </head>
 <body>
-    <div class="container" data-0="transform: translateX(0%);" data-1000="transform: translateX(-500%)" id="container" >
+    <div class="container" data-0="transform: translateX(0%);" data-10000="transform: translateX(-600%)" id="container" >
         <section class="content">
             <img src="img/portada.png" alt="" class="portada">
             
@@ -75,47 +76,44 @@
             </div>
         </section>
     </div>
-    <!--
+    <section>
+
+    </section>
+    <section>
+
+    </section>
     <div class="footer">
         <div>
             
-            <button id="prev">anterior</button>
-            <button id="next">siguiente</button>
+            <button id="prev" ><i class="fas fa-arrow-left"></i></button>
+            <button id="next"><i class="fas fa-arrow-right"></i></button>
+            <button id="prev"><i class="fas fa-volume-mute"></i></button>
+
+
         </div>
     </div>
-    -->
 </body>
 <script type="text/javascript" src="./js/skrollr.js"></script>
 <script type="text/javascript">
+    
+    var prevBtn = document.getElementById("prev");
     var s = skrollr.init();
+
+    prevBtn.onclick = function(){
+        s.animateTo(1800);
+        console.log(scroln, limit), nlimit
+    }
+    
 </script>
+<script src="https://kit.fontawesome.com/1e1a8bc4b5.js" crossorigin="anonymous"></script>
+
 <script type="text/javascript">
     scroln = 0 ;
     var elements = document.getElementById("container").childElementCount;
     var nextBtn = document.getElementById("next");
-    var prevBtn = document.getElementById("prev");
-
-    var limit = elements * -100;
-    var nlimit = elements * 100;
-    
-
-    prevBtn.onclick = function(){
-        scroln += 100;
-        document.getElementById('container').style.transform = "translateX("+ scroln +"%)";
-        if(scroln == 100){
-            scroln = nlimit;
-        }
-        console.log(scroln, limit), nlimit
-    }
-
 
     nextBtn.onclick = function(){
-        scroln += -100;
-        document.getElementById('container').style.transform = "translateX("+ scroln +"%)";
-        if(scroln == limit){
-            scroln = 100;
-        }
-        console.log(scroln, limit, nlimit)
+     
     }
 </script>
 </html>
