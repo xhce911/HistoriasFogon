@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const port = 5001;
+const port = 5001 || process.env.PRODUCTION;
 
 
 app.use(express.static("public"));
