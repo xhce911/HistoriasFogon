@@ -75,13 +75,29 @@
 
             </div>
         </section>
+        <section>
+            <img src="img/portada1.png" alt="">
+        </section>
+        <section>
+            
+            <div class="content text1">
+                <h2>Bodas y platillos con Lourdes Hernández</h2>
+                <br>
+                <p>En 1824, el territorio de Colima y la entonces Provincia de Guadalajara se decretaron como dos estados federales totalmente independientes. Con esta división, Jalisco se añadiría localidades como Tuxpan, Tolimán, Zapotitlán de Vadillo, Pihuamo y demás regiones que compartían con Colima una identidad cultural. <br>
+    
+                    Sin embargo, los efectos de la cultura no entienden de líneas imaginarias y aunque ahora nos podríamos pensar separados por un volcán harto de fotografías y metáforas en su honor, casi dos siglos después, la identidad del sur de Jalisco y Colima siguen siendo bastantes cercanas. Se manifiesta de manera contundente y particular, por sólo mencionar un hecho, en la confusión que hasta la fecha genera Pedro Páramo en los lectores locales, aguerridos a querer localizar un pueblo imaginario que nunca existió, sin entender que ese Comala lleno de muertos es la representación de todo un territorio. <br>
+                    
+                    Tenemos el mismo pasado y en el presente nos unimos a Jalisco a través de platillos, ingredientes, voces, biosfera, tradiciones y rituales. Somos un efecto similar a Tijuana y San Diego, aunque a nosotros no nos separa un visado. Así es nuestra naturaleza como sociedad, separatismo individualista y este 2020 estamos llegando a unos extremos que nunca desearíamos. <br>
+                    
+                    Pero ante las situaciones adversas, el pensamiento comunitario no tarda en reivindicarse y las acciones más cotidianas, como la cocina, se convierten en espacios de defensa de nuestra colectividad. <br>
+                
+                </p>
+                <div class="decorators">
+                    <img src="img/icon1.png" class="deco1" alt="">
+                </div>
+            </div>
+        </section>
     </div>
-    <section>
-
-    </section>
-    <section>
-
-    </section>
     <div class="footer">
         <div>
             
@@ -101,6 +117,11 @@
     var nextBtn = document.getElementById("next");
     var volumeBtn = document.getElementById("volum").childNodes[0];
     var sound = true;
+    var textview = document.getElementsByClassName("text1");
+    var increment = 0; 
+    var content = document.getElementsByName("content").offsetWidth;
+
+    console.log(content);
 
     volumeBtn.onclick = function(){
         sound =!sound;
@@ -112,13 +133,17 @@
             volumeBtn.classList.add('fas', 'fa-volume-up');
         }
     }
-
-    nextBtn.onclick = function(){
     
-    }
+
     prevBtn.onclick = function(){
-        s.animateTo(1800);
-        console.log(scroln, limit), nlimit
+        increment -= 1650;
+        s.animateTo(increment);
+        console.log(increment)
+    }
+    nextBtn.onclick = function(){
+        increment += 1650;
+        s.animateTo(increment);
+        console.log(increment)
     }
 
 

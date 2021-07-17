@@ -71,3 +71,14 @@
 .ps{
     text-indent: 0.5em;
 }
+.decorators{
+    width: 100%;
+    text-align: center;
+}
+
+.deco1{
+    text-align: center;
+    top: 0;
+    width: 10%;
+    height: auto;
+}
