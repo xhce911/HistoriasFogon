@@ -98,3 +98,13 @@
     background-image: url('img/portada1.jpg');
     background-size: contain;
 }
+
+
+.content .row{
+    align-items: center;
+}
+
+
+.card{
+    margin: 50px;
+}
