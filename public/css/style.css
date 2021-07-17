@@ -19,6 +19,7 @@
     text-align: justify;
     justify-content: center;
     max-width: 1080px;
+    
 }
 
 .container section
@@ -76,9 +77,24 @@
     text-align: center;
 }
 
+.text1 h2{
+    text-align: center;
+}
+
 .deco1{
     text-align: center;
     top: 0;
     width: 10%;
     height: auto;
+}
+
+.img1{
+    width: 100%;
+}
+
+.cover{
+    width: 100%;
+    height: 100%;
+    background-image: url('img/portada1.jpg');
+    background-size: contain;
 }
