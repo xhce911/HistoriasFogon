@@ -11,7 +11,7 @@
 
 </head>
 <body>
-    <div class="container" data-0="transform: translateX(0%);" data-2500="transform: translateX(-500%)" id="container" >
+    <div class="container" data-0="transform: translateX(0%);" data-2449="transform: translateX(-490%)" id="container" >
         <section class="content" data-0="opacity: 1;" data-900="opacity: 0;">
             <img src="img/portada.png" alt="" class="portada" id>
         </section>
@@ -20,56 +20,72 @@
                     <h1>Historias del fogón</h1>
                     <h4>Experiencias de vida de cocineras tradicionales colimenses</h4>
                     <h4>Proyecto buendía</h4>
-
             </div>
         </section>
         <section>
             <div class="content">
-                <h4>Historias del fogón: experiencias de vida de cocineras tradicionales colimenses<large>edición digital, 2020</large></h4><br>
-                <p>Desarrollo de texto</p>
-                <p>Oscar Armando Martínez</p>
-                <br />
-                <p>Asesoría técnica</p>
-                <p>Mayreni Ortega Monroy</p>
-                <br />
-                <p>Fotos e ilustraciones</p>
-                <p>Úrzula Reyes</p>
-                <br />
-                <p>Edición</p>
-                <p>Proyecto Buendía</p>
-                <br />
-                <p>Desarrollo de publicación digital</p>
-                <p>Carlos Martínez</p>
+                <div class="row">
+                    <h3>Historias del fogón: experiencias de vida de cocineras tradicionales colimenses<br><small>edición digital, 2020</small></h3><br>
+                    <div class="col-md-6">
+                        <p><b> Desarrollo de texto </b></p>
+                        <p>Oscar Armando Martínez</p>
+                        <br />
+                        <p><b>Asesoría técnica </b></p>
+                        <p>Mayreni Ortega Monroy</p>
+                        <br />
+                    </div>
+                    <div class="col-md-6">
+                        <p><b>Fotos e ilustraciones</b></p>
+                        <p>Úrzula Reyes</p>
+                        <br />
+                        <p><b>Edición</b></p>
+                        <p>Proyecto Buendía</p>
+                        <br />
+                        <p><b>Desarrollo de publicación digital</b></p>
+                        <p>Carlos Martínez</p>
+                    </div>
+                </div>
+                
+                
+                
             </div>
         </section>
         <section>
             <div class="content">
-                <div class="row responsive-padding">
-                    <div class="card  hvr-grow" >
-                        <img src="/img/icon5.png"  class="section media" alt="">
-                        <h4>Presentación</h4>
+                <div class="row fluid">
+                    <div class="col-sm-4">
+                        <div class="card   hvr-grow" >
+                            <img src="/img/icon5.png"  class="section media" alt="">
+                            <h4>Presentación</h4>
+                        </div>
+                        <div class="card   hvr-grow" >
+                            <img src="/img/portada1.png"  class="section media" alt="">
+                            <h4>Bodas y platillos con Lourdes Hernández</h4>
+                        </div>
                     </div>
-                    <div class="card  hvr-grow" >
-                        <img src="/img/portada1.png"  class="section media" alt="">
-                        <h4>Bodas y platillos con Lourdes Hernández</h4>
+                    <div class="col-sm-4">
+                        <div class="card   hvr-grow" >
+                            <img src="/img/portada2.png"  class="section media" alt="">
+                            <h4>Tesoros enterrados en Ixtlahuacán</h4>
+                        </div>
+                        <div class="card   hvr-grow" >
+                            <img src="/img/portada3.png"  class="section media" alt="">
+                            <h4>Contradicciones en el paraíso</h4>
+                        </div>
                     </div>
-                    <div class="card  hvr-grow" >
-                        <img src="/img/portada2.png"  class="section media" alt="">
-                        <h4>Tesoros enterrados en Ixtlahuacán</h4>
+                    <div class="col-sm-4">
+                        <div class="card   hvr-grow" >
+                            <img src="/img/portada4.png"  class="section media" alt="">
+                            <h4>Café del puerto</h4>
+                        </div>
+                        <div class="card   hvr-grow" >
+                            <img src="/img/portada5.png"  class="section media" alt="">
+                            <h4>La milpa de Eva</h4>
+                        </div>    
                     </div>
-                    <div class="card  hvr-grow" >
-                        <img src="/img/portada3.png"  class="section media" alt="">
-                        <h4>Contradicciones en el paraíso</h4>
-                    </div>
-                    <div class="card  hvr-grow" >
-                        <img src="/img/portada4.png"  class="section media" alt="">
-                        <h4>Café del puerto</h4>
-                    </div>
-                    <div class="card  hvr-grow" >
-                        <img src="/img/portada5.png"  class="section media" alt="">
-                        <h4>La milpa de Eva</h4>
-                    </div>
+                   
                     
+                   
                 </div>
             </div>
         </section>
@@ -88,10 +104,7 @@
 
             </div>
         </section>
-        <section data-2600="transform: translateY(220%);" data-5000="transform: translateY(-250%);">
-            <div class="cover">
-
-            </div>
+        <section data-2449="transform: translateY(220%);" data-5000="transform: translateY(-250%);">
             <div class="content text1">
                 <img src="img/portada1.png" class="img1" alt="">
                 <h2>Bodas y platillos con Lourdes Hernández</h2>
@@ -200,8 +213,9 @@
     var textview = document.getElementsByClassName("text1");
     var increment = 0; 
     var content = document.getElementsByName("content").offsetWidth;
-
-    console.log(content);
+    window.onscroll = function (e) {
+        console.log(window.scrollY); // Value of scroll Y in px
+    };
 
     volumeBtn.onclick = function(){
         sound =!sound;
@@ -216,12 +230,12 @@
     
 
     prevBtn.onclick = function(){
-        increment -= 500;
+        increment -= 490;
         s.animateTo(increment);
         console.log(increment)
     }
     nextBtn.onclick = function(){
-        increment += 500;
+        increment += 490;
         s.animateTo(increment);
         console.log(increment)
     }
