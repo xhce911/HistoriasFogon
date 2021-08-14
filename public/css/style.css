@@ -48,6 +48,19 @@
     image-resolution: 100%;
 }
 
+.coverOne{
+    background:linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3) ),  url('/img/portada1.png') center no-repeat;
+    background-size:auto,cover;
+    background-origin: inherit;
+    background-position: center;
+    object-fit: cover;
+    position: absolute;
+    filter: blur(5px);
+    top: 0;
+    width:100%;
+    height:100vw;
+    z-index: 0;
+}
 
 
 .section h4{
@@ -100,9 +113,14 @@
 }
 
 .img1{
+    height: 44rem;
+    object-fit: cover;
+    position: relative;
+    top: -1rem;
+    left: -30%;
+    max-width: 70rem;
     width: 100%;
-    align-self: center;
-    height: 100vh;
+    transform: translateX(50%);
 }
 
 .presentacion{
@@ -135,4 +153,70 @@
     width: 10%;
     height: auto;
 }
+
+
+.h1 {
+	font-family: Georgia, "Times New Roman", serif;
+	margin-bottom: 3em;
+	margin-top: 5em;
+	text-align: center;
+	-moz-hyphens: none;
+	-webkit-hyphens: none;
+	-o-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+.h2 {
+	font-family: Georgia, "Times New Roman", serif;
+	margin-bottom: 3em;
+	margin-top: 1em;
+	text-align: center;
+	-moz-hyphens: none;
+	-webkit-hyphens: none;
+	-o-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+.p1 {
+	font-family: Georgia, "Times New Roman" serif;
+	font-size: 1em;
+	text-align: justify;
+	line-height: 1.5em;
+	-moz-hyphens: none;
+	-webkit-hyphens: none;
+	-o-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+.p2 {
+	font-family: Georgia, "Times New Roman" serif;
+	font-size: 1em;
+	text-align: justify;
+	line-height: 1.5em;
+	text-indent: 1.5em;
+	margin-top: .5em;
+	-moz-hyphens: none;
+	-webkit-hyphens: none;
+	-o-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+.blockq {
+	text-align: center;
+	font-size: .95em;
+	margin: 2.5em 1.5em;
+	line-height: 1em;
+}
+
+.versalitas {
+	font-family: Georgia, "Times New Roman" serif;
+	font-size: 1em;
+	font-variant: small-caps;
+	text-transform: lowercase;
+}
+
+
 
