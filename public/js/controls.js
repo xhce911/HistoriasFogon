@@ -25,12 +25,12 @@ volumeBtn.onclick = function(){
 
 
 prevBtn.onclick = function(){
-    increment -= 550;
+    increment -= 512;
     s.animateTo(increment);
     console.log(increment)
 }
 nextBtn.onclick = function(){
-    increment += 550;
+    increment += 512;
     s.animateTo(increment);
     console.log(increment)
 }
