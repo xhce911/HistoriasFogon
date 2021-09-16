@@ -1,36 +1,46 @@
-var prevBtn = document.getElementById("prev");
-var s = skrollr.init();
-var nextBtn = document.getElementById("next");
+/* eslint-disable no-undef */
+/* eslint-disable no-unused-vars */
+const prevBtn = document.getElementById("prev");
+const s = skrollr.init();
+const nextBtn = document.getElementById("next");
+// eslint-disable-next-line no-var
 var volumeBtn = document.getElementById("volum").childNodes[0];
-var sound = true;
-var textview = document.getElementsByClassName("text1");
+let sound = true;
+const textview = document.getElementsByClassName("text1");
 var increment = 0;
-var content = document.getElementsByName("content").offsetWidth;
+// eslint-disable-next-line no-undef
+const content = document.getElementsByName("content").offsetWidth;
+
+// eslint-disable-next-line no-var
 
 
-window.onscroll = function (e) {
-    console.log(window.scrollY); // Value of scroll Y in px
+// eslint-disable-next-line no-undef
+window.onscroll = function(e) {
+  // eslint-disable-next-line no-undef
+   console.log(window.scrollY); // Value of scroll Y in px
 };
 
-volumeBtn.onclick = function () {
-    sound = !sound;
-    if (sound == false) {
-        volumeBtn.classList.remove('fas', 'fa-volume-up');
-        volumeBtn.classList.add('fas', 'fa-volume-off');
-    } else {
-        volumeBtn.classList.remove('fas', 'fa-volume-off');
-        volumeBtn.classList.add('fas', 'fa-volume-up');
-    }
-}
+volumeBtn.onclick = function() {
+  sound = !sound;
+  if (sound == false) {
+    volumeBtn.classList.remove("fas", "fa-volume-up");
+    volumeBtn.classList.add("fas", "fa-volume-off");
+  } else {
+    volumeBtn.classList.remove("fas", "fa-volume-off");
+    volumeBtn.classList.add("fas", "fa-volume-up");
+  }
+};
 
 
-prevBtn.onclick = function () {
-    increment -= 500;
-    s.animateTo(increment);
-    console.log(increment)
-}
-nextBtn.onclick = function () {
-    increment += 500;
-    s.animateTo(increment);
-    console.log(increment)
-}
+prevBtn.onclick = function() {
+  // eslint-disable-next-line no-const-assign
+  increment -= 420;
+  s.animateTo(increment);
+  console.log(increment);
+};
+nextBtn.onclick = function() {
+  // eslint-disable-next-line no-const-assign
+  increment += 420;
+  s.animateTo(increment);
+  console.log(increment);
+};

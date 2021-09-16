@@ -1,0 +1,20 @@
+/* mobile conditions*/
+@media screen and (max-width: 600px){
+    .portada{
+        max-width: 100%;
+        height: auto;
+    }
+
+    .content{
+        font-size: 8pt;
+       
+    }
+
+    .mcont{
+        margin-bottom: 180px;
+    }
+
+    
+
+}
+

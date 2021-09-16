@@ -41,7 +41,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    scroll-snap-align: start;
     
+}
+
+section img {
+    scroll-snap-align: center;
+
 }
 
 
@@ -258,29 +264,8 @@
 }
 
 .versalitas {
-	font-family: Georgia, "Times New Roman" serif;
 	font-size: 1em;
 	font-variant: small-caps;
 	text-transform: lowercase;
-}
-
-/* mobile conditions*/
-@media screen and (max-width: 600px){
-    .portada{
-        max-width: 100%;
-        height: auto;
-    }
-
-    .content{
-        font-size: 8pt;
-       
-    }
-
-    .mcont{
-        margin-bottom: 180px;
-    }
-
-    
-
 }
 
