@@ -7,7 +7,7 @@ const nextBtn = document.getElementById("next");
 var volumeBtn = document.getElementById("volum").childNodes[0];
 let sound = true;
 const textview = document.getElementsByClassName("text1");
-var increment = 0;
+let increment = 0;
 // eslint-disable-next-line no-undef
 const content = document.getElementsByName("content").offsetWidth;
 
@@ -17,8 +17,9 @@ const content = document.getElementsByName("content").offsetWidth;
 // eslint-disable-next-line no-undef
 window.onscroll = function(e) {
   // eslint-disable-next-line no-undef
-   console.log(window.scrollY); // Value of scroll Y in px
+  console.log(window.scrollY); // Value of scroll Y in px
 };
+
 
 volumeBtn.onclick = function() {
   sound = !sound;
@@ -44,3 +45,6 @@ nextBtn.onclick = function() {
   s.animateTo(increment);
   console.log(increment);
 };
+
+
+

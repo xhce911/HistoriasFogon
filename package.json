@@ -9,8 +9,11 @@
   },
   "main": "index.js",
   "dependencies": {
+    "aos": "^2.3.4",
+    "browser-detect": "^0.2.28",
     "ejs": "^3.1.6",
     "express": "^4.17.1",
+    "express-mobile-redirect": "^1.2.0",
     "nodemon": "^2.0.12"
   },
   "devDependencies": {
