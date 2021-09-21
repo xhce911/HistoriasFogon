@@ -177,7 +177,7 @@ section img {
 }
 
 .portada {
-    max-width: 100%;
+    max-width: 50%;
     height: auto;
 }
 
@@ -298,7 +298,7 @@ section img {
 @media screen and (width: 375px){
   
 .portada{
-    margin-top: 200px;
+    margin-top: 150px;
     max-width: 80%;
 }
    
