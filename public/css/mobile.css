@@ -1,0 +1,345 @@
+.container
+{
+    width: 100%;
+    max-height: 100vh;
+}
+
+.container section{
+    scroll-snap-align: center;
+}
+.pt2{
+    margin-bottom: 100px;
+}
+
+.post2{
+    background-color: white;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+.content{
+    align-items: center;
+    justify-content: space-between;
+    text-align: justify;
+    justify-content: center;
+    max-width: 1080px;
+     
+}
+
+.breath{
+    margin-top: 250px;
+    margin-bottom: 250px;  
+}
+
+
+
+.container section
+{
+    min-width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+    
+}
+
+section img {
+    scroll-snap-align: center;
+
+}
+
+
+.card{
+    width: 500px;
+    height: 250px;
+    display: block;
+}
+
+.card img{
+    width: 100%;
+    height: 100%;
+    image-resolution: 100%;
+}
+
+.coverOne{
+    background:linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3) ),  url('/img/portada1.png') center no-repeat;
+    background-size:auto,cover;
+    background-origin: inherit;
+    background-position: center;
+    object-fit: cover;
+    position: absolute;
+    filter: blur(5px);
+    width:100%;
+    max-width: 100%;
+    min-height:100vh;
+    z-index: 0; 
+    text-align: center;
+    margin-top: 250px;
+    margin-bottom: 250px;
+}
+
+.coverTwo{
+    background:linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3) ),  url('/img/portada2.png') center no-repeat;
+    background-size:auto,cover;
+    background-origin: inherit;
+    background-position: center;
+    object-fit: cover;
+    position: absolute;
+    filter: blur(5px);
+    width:100%;
+    max-width: 1706px;
+    min-height:100vh;
+    z-index: 0; 
+    text-align: center;
+    margin-top: 250px;
+    margin-bottom: 250px;
+}
+.coverThree{
+    background:linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3) ),  url('/img/portada3.png') center no-repeat;
+    background-size:auto,cover;
+    background-origin: inherit;
+    background-position: center;
+    object-fit: cover;
+    position: absolute;
+    filter: blur(5px);
+    width:100%;
+    max-width: 1706px;
+    min-height:100vh;
+    z-index: 0; 
+    text-align: center;
+    margin-top: 250px;
+    margin-bottom: 250px;
+}
+.coverFour{
+    background:linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3) ),  url('/img/portada4.png') center no-repeat;
+    background-size:auto,cover;
+    background-origin: inherit;
+    background-position: center;
+    object-fit: cover;
+    position: absolute;
+    filter: blur(5px);
+    width:100%;
+    max-width: 1706px;
+    min-height:100vh;
+    z-index: 0; 
+    text-align: center;
+    margin-top: 250px;
+    margin-bottom: 250px;
+}
+
+.coverFive{
+    background:linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3) ),  url('/img/portada5.png') center no-repeat;
+    background-size:auto,cover;
+    background-origin: inherit;
+    background-position: center;
+    object-fit: cover;
+    position: absolute;
+    filter: blur(5px);
+    width:100%;
+    max-width: 1706px;
+    min-height:100vh;
+    z-index: 0; 
+    text-align: center;
+    margin-top: 250px;
+    margin-bottom: 250px;
+}
+.section h4{
+    font-size: 11pt;
+}
+
+.portadilla{
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 350px;
+    margin-top: 350px;
+}
+
+.ptitle{
+    margin-bottom: 3rem;
+
+}
+
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    height: 80px;
+    width: 100%;
+    background-color: #E8D42A;
+}
+
+.portada {
+    max-width: 50%;
+    height: auto;
+}
+
+.credits{
+    margin-bottom: 250px;
+}
+
+.index{
+    margin-bottom: 200px;
+}
+
+
+.img1{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    height: auto;
+    object-fit: fill;
+    position: relative;
+    top: -1rem;
+    max-width: 70rem;
+    width: 100%;
+    transform: translateX(0%);
+}
+
+.presentacion{
+    width: 1080px;
+
+}
+
+.controls{
+    width: 50px;
+    height: 50px;
+}
+
+
+.ps{
+    text-indent: 0.5em;
+}
+.decorators{
+    width: 100%;
+    text-align: center;
+}
+
+.text1 h2{
+    margin-top: 20%;
+    text-align: center;
+}
+
+.deco1{
+    text-align: center;
+    top: 0;
+    width: 10%;
+    height: auto;
+}
+
+
+.h1 {
+	margin-bottom: 3em;
+	margin-top: 5em;
+	text-align: center;
+	-moz-hyphens: none;
+	-webkit-hyphens: none;
+	-o-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+.h2 {
+	margin-bottom: 3em;
+	margin-top: 1em;
+	text-align: center;
+	-moz-hyphens: none;
+	-webkit-hyphens: none;
+	-o-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+.p1 {
+	font-size: 1em;
+	text-align: justify;
+	line-height: 1.5em;
+	-moz-hyphens: none;
+	-webkit-hyphens: none;
+	-o-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+.p2 {
+	font-size: 1em;
+	text-align: justify;
+	line-height: 1.5em;
+	text-indent: 1.5em;
+	margin-top: .5em;
+	-moz-hyphens: none;
+	-webkit-hyphens: none;
+	-o-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+.blockq {
+	text-align: center;
+	font-size: .95em;
+	margin: 2.5em 1.5em;
+	line-height: 1em;
+}
+
+.versalitas {
+	font-size: 1em;
+	font-variant: small-caps;
+	text-transform: lowercase;
+}
+
+
+/* mobile conditions*/
+
+@media screen and (max-width: 320px){
+  
+.portada{
+    margin-top: 150px;
+    max-width: 80%;
+}
+
+.coverOne, .coverTwo, .coverThree, .coverFour, .coverFive{
+    display: none;
+} 
+
+
+   
+}
+
+@media screen and (max-width: 812px){
+    .portada{
+        max-width: 30%;
+    }
+    .coverOne, .coverTwo, .coverTree, .coverFour, .coverFive{
+        display:none ;
+    } 
+}
+
+@media screen and (max-width: 768px){
+    .portada{
+       margin-top: 40px;
+        max-width: 80%;
+    }
+    .coverOne, .coverTwo, .coverThree, .coverFour, .coverFive{
+        display: none;
+    } 
+}
+
+
+@media screen and (min-width: 1024px){
+    .portada{
+       margin-top: 20px;
+        max-width: 40%;
+    }
+    .coverOne, .coverTwo, .coverThree, .coverFour, .coverFive{
+        display: block;
+    } 
+}
+
+
+
+
